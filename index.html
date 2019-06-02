@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="style.css" rel="stylesheet">
+<title>Animation Player</title>
+</head>
+<body>
+    <header class="header">
+        <img id="imgHeader1" src="src/icons/Shape.png" alt="Shape.png">
+        <h1>CodeJam - Animation Player</h1>
+        <img id="imgHeader2" src="src/icons/Shap.png" alt="Shap.png">
+    </header>  
+    <main>
+        <section id="leftSide">
+          <div class="leftBlock" id="tools">
+              <button class="btn" id="paint"><img src="src/icons/i1.png" alt="i1.png"><span class="txt">(P)</span></button>
+              <button class="btn underline" id="choose"><img src="src/icons/i2.png" alt="i2.png"><span class="txt">(C)</span></button>
+              <button class="btn" id="move"><img src="src/icons/i3.png" alt="i3.png"><span class="txt">(M)</span></button>
+              <button class="btn" id="transform"><img src="src/icons/i4.png" alt="i4.png"><span class="txt">(T)</span></button>
+          </div>
+          <div class="leftBlock" id="colors">
+              <button class="btn" id="currentBtn"><div class="color" id="current"></div><span class="txt2" id="currentTxt">Curr</span></button>
+              <button class="btn underline" id="prevBtn"><div class="color" id="prev"></div><span class="txt2" id="prevTxt">Prev</span></button>
+              <button class="btn" id="redBtn"><div class="color" id="red"></div><span class="txt2" id="redTxt">red</span></button>
+              <button class="btn" id="blueBtn"><div class="color" id="blue"></div><span class="txt2" id="blueTxt">blue</span></button>
+          </div>
+        </section>
+        <section id="animation">
+            <div class="middleBlock" id="frames">
+                <div class="frameBox">
+                    <canvas class="frame" id="0" width="74" height="74"></canvas>
+                    <button class="copy">copy</button>
+                    <button class="del">del</button>
+                </div>
+                <div id="newFrame"><button id="addFrame">Add frame</button></div>
+            </div>
+            <div class="middleBlock" id="preview">
+                <canvas id="canvas" width="150" height="150"></canvas>
+                <button id="fullscreen">Fullscreen</button>
+                <div class="range">
+                    <input type="range" id="speedRange" list="tickmarks" name="fps" min="1" max="24">
+                    <datalist id="tickmarks">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                        <option value="11">
+                        <option value="12">
+                        <option value="13">
+                        <option value="14">
+                        <option value="15">
+                        <option value="16">
+                        <option value="17">
+                        <option value="18">
+                        <option value="19">
+                        <option value="20">
+                        <option value="21">
+                        <option value="22">
+                        <option value="23">
+                        <option value="24">
+                    </datalist>
+                    <label for="fps">FPS (1-24)</label>
+                    <div id="speedRangeValue">13</div>
+                </div>
+                <button id="draw">start animation</button>
+            </div>
+        </section>
+        <section id="elements">
+          <div class="square" id="sq11"></div>
+          <div class="square" id="sq12"></div>
+          <div class="square" id="sq13"></div>
+          <div class="square" id="sq21"></div>
+          <div class="square" id="sq22"></div>
+          <div class="square" id="sq23"></div>
+          <div class="square" id="sq31"></div>
+          <div class="square" id="sq32"></div>
+          <div class="square" id="sq33"></div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="src/index.js"></script>
+</body>
+</html>

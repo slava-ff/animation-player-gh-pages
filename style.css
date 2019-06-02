@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&subset=latin-ext');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 1365px;
+    height: 590px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+    height: 5.45%;
+    box-shadow: 0px 2px 5px rgba(92, 92, 92, 0.5);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.header #imgHeader1 {
+    margin-left: 18px;
+    margin-top: -5px;
+}
+
+.header h1 {
+    margin-left: 36px;
+    margin-top: -5px;
+}
+
+.header #imgHeader2 {
+    margin-left: 1015px;
+    margin-top: -5px;
+}
+
+main {
+    height: 100%;
+    margin: 28px 28px 0px 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+main #leftSide {
+    /*background-color: red;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(92, 92, 92);
+    font-size: 12pt;
+}
+
+main #leftSide .leftBlock {
+    width: 110px;
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(92, 92, 92, 0.5);
+}
+
+main #leftSide .leftBlock .btn {
+    height: 22.5%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+main #leftSide .leftBlock .btn .txt {
+    margin-left: 34px;
+    margin-top: -4px;
+}
+
+main #leftSide .leftBlock .btn .txt2 {
+    margin-left: 17px;
+    margin-top: -4px;
+}
+
+main #leftSide .leftBlock .btn img {
+    margin-left: 15px;
+}
+
+main #leftSide .leftBlock .btn .color {
+    margin-left: 15px;
+}
+
+main #leftSide .leftBlock .underline {
+    border-bottom: 1px solid rgba(214, 214, 214, 0.5);
+}
+
+main #leftSide #colors {
+    margin-top: 87px;
+}
+
+main #leftSide #colors .color {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(92, 92, 92, 0.5);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+main #leftSide #colors #current {
+    background-color: rgb(196, 196, 196);
+}
+
+main #leftSide #colors #prev {
+    background-color: rgb(65, 247, 149);    
+}
+
+main #leftSide #colors #red {
+    background-color: rgb(247, 65, 65);    
+}
+
+main #leftSide #colors #blue {
+    background-color: rgb(65, 182, 247);    
+}
+
+main #animation {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+main #animation #frames {
+    background-color: blue;
+    height: 70%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+main #animation #frames .frameBox {
+    width: 105px;
+    height: 75px;
+    align-self: center;
+    border: 1px solid black;
+    font-size: 8pt;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+main #animation #frames .frameBox .copy, .del {
+    height: 30px;
+    width: 25px;
+    border: 1px solid black;
+}
+
+main #animation #frames .frameBox .del {
+    position: relative;
+    bottom: 44px;
+    left: 76px;
+}
+
+main #animation #frames .frameBox .copy {
+    position: relative;
+    bottom: 53px;
+}
+
+main #animation #frames .frameBox .frame {
+    width: 74px;
+    height: 74px;
+    border: 1px solid black;
+}
+
+main #animation #frames #newFrame {
+    width: 74px;
+    height: 4px;
+    align-self: center;
+}
+
+main #animation #frames #newFrame #addFrame {
+    width: 100%;
+    background-color: blueviolet;
+}
+
+main #animation #preview {
+    background-color: white;
+    height: 25%;
+    margin: 1%;
+    display: flex;
+}
+
+main #animation #preview #canvas:fullscreen {
+    background-color: white;
+}
+
+main #animation #preview .range {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+main #animation #preview #draw {
+    background-color: orchid;
+    padding: 1%;
+    margin: 1%;
+}
+
+main #animation #preview #fullscreen {
+    background-color: orchid;
+    padding: 1%;
+    margin: 1%;
+}
+
+main #elements {
+    height: 100%;
+    width: 594px;
+    height: 594px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #elements .square {
+    height: 190px;
+    width: 190px;
+    background-color: rgb(196, 196, 196);
+    margin: 4px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+
+
+.highlight {
+    background-color: rgb(230, 230, 230);
+}
+
+datalist {
+    display: run-in;
+}
